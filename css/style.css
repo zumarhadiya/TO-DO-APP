@@ -1,0 +1,135 @@
+/* body{
+    background-image: url(imgs/download.png);
+    background-position: fixed;
+} */
+h1{
+    background-color:  rgb(243, 170, 34);
+    border-radius: 100%;
+    width: 35%;
+    text-align: center;
+    color: rgb(13, 13, 14);
+}
+.head{
+    font-size: 30px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    margin: -30px;
+}
+h1:hover{
+    /* width: 22%; */
+    color: rgb(112, 85, 34);
+    /* font-size: 250%; */
+    background-color: rgb(248, 208, 132);
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(247, 217, 156);
+    margin: 30px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 9%;
+    font-size: 165%;
+}
+.todo h2{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border:none;
+    background-color: rgb(250, 237, 218);
+    font-weight: 200px;
+    padding: 10px;
+    outline-color: rgb(243, 170, 34);
+    border-radius: 40px;
+}
+button{
+    color:  rgb(250, 237, 218);
+    background-color:  rgb(243, 170, 34);
+    font-size: 19px;
+    height: 40px;
+    width: 90px;
+    border:none;
+    border-radius: 40px;
+}
+
+ul li{
+    font-size: 30px;
+    padding: 12px 8px 12px 50px;
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+/* ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/radio.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+} */
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+/* ul li.checked::before{
+    background-image: url(imgs/tick.png);
+} */
+
+
+.img{
+    position: absolute;
+    right: -4%;
+    top: -11px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.938);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 15px;
+}
+.img:hover{
+    background-color: rgb(221, 196, 196);
+}
+.edit:hover{
+    background-color: rgb(221, 196, 196); 
+}
+.edit{
+    position: absolute;
+    right: 14%;
+    top: 0px;
+    width: 25px;
+    height: 25px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.938);
+    line-height: 40px;
+    text-align: center;
+    padding: 15px;
+    /* border-radius: 50%; */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-APP | ZUMAR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body style="background-image: url(imgs/download.png); background-position: fixed;">
+    <style>
+        ul li::before {
+            content: "";
+            position: absolute;
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+            background-image: url(imgs/radio.png);
+            background-size: cover;
+            background-position: center;
+            top: 12px;
+            left: 8px;
+        }
+        ul li.checked::before {
+            background-image: url(imgs/tick.png);
+        }
+    </style>
+    <div class="head">
+        <h1>TO DO</h1>
+    </div>
+    <div class="container">
+        <div class="todo">
+            <h2>TO-DO List <img width="50px" height="45px" src="imgs/exercise-routine.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="add your work">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                 <!-- <li class="checked">Task 1</li>
+                <li>Ta -->
+</html> 
